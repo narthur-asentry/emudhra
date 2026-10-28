@@ -6,6 +6,7 @@ import urllib.request
 try:
 	import requests
 except ImportError:
+	print(f"Requests library not found", file=sys.stdout)
 	requests = None
 
 URLS = [
